@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evimeria - Sustainable Gold Instrument</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        evimeria: {
+                            dark: '#022c22',    /* Emerald Very Dark */
+                            primary: '#047857', /* Emerald Green */
+                            gold: '#D4AF37',    /* Metallic Gold */
+                            goldLight: '#F3E5AB',
+                            gray: '#F8F9FA'     /* Corporate Light Gray */
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'luxury': '0 20px 50px -12px rgba(4, 120, 87, 0.15)',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Hide scrollbar for clean look */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: #022c22; }
+        ::-webkit-scrollbar-thumb { background: #047857; border-radius: 3px; }
+        
+        .gold-gradient-text {
+            background: linear-gradient(to right, #D4AF37, #F3E5AB, #D4AF37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-size: 200% auto;
+            animation: shine 5s linear infinite;
+        }
+        
+        @keyframes shine {
+            to { background-position: 200% center; }
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-800 bg-white antialiased">
+
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-xl border-b border-gray-100 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 bg-evimeria-dark rounded-xl flex items-center justify-center text-evimeria-gold text-lg group-hover:bg-evimeria-primary transition duration-500">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <span class="font-bold text-2xl tracking-tight text-evimeria-dark">Evimeria</span>
+                </a>
+                
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#why-us" class="text-sm font-medium text-gray-500 hover:text-evimeria-primary transition">Solusi</a>
+                    <a href="#proyek" class="text-sm font-medium text-gray-500 hover:text-evimeria-primary transition">Portofolio</a>
+                    <a href="#keamanan" class="text-sm font-medium text-gray-500 hover:text-evimeria-primary transition">Keamanan</a>
+                    <a href="#kalkulator" class="text-sm font-medium text-gray-500 hover:text-evimeria-primary transition">Simulasi</a>
+                </div>
+
+                <div class="hidden md:flex">
+                    <a href="https://www.figma.com/proto/p01yCk5PDYi3tU8Tbd6QWw/Evimeria-Mobile-App-Design" 
+                       target="_blank"
+                       class="px-6 py-2.5 bg-evimeria-dark text-white text-sm font-semibold rounded-lg hover:bg-evimeria-primary transition-all duration-300 shadow-lg hover:shadow-evimeria-primary/40 flex items-center gap-2">
+                        <span>Live Demo</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="relative pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden bg-evimeria-dark">
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-evimeria-primary rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+            <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-evimeria-gold rounded-full blur-3xl translate-y-1/3 -translate-x-1/3"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <div class="mb-8 flex justify-center">
+                <span class="px-4 py-1.5 rounded-full border border-evimeria-gold/30 bg-evimeria-gold/10 text-evimeria-gold text-xs font-bold tracking-widest uppercase">
+                    Sustainable Gold Instrument
+                </span>
+            </div>
+
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight tracking-tight">
+                Investasi Aman dengan Emas,<br>
+                <span class="gold-gradient-text">Dampak Nyata untuk Bumi.</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-gray-300 mb-12 max-w-2xl mx-auto font-light leading-relaxed">
+                Gabungkan stabilitas aset <strong>Emas Digital</strong> dengan potensi dividen <strong>Proyek Hijau</strong>. 
+                Solusi cerdas bagi profesional yang peduli profit dan planet.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://www.figma.com/proto/p01yCk5PDYi3tU8Tbd6QWw/Evimeria-Mobile-App-Design" 
+                   target="_blank"
+                   class="px-8 py-4 bg-evimeria-gold hover:bg-yellow-500 text-evimeria-dark font-bold rounded-xl transition-all shadow-xl hover:shadow-yellow-500/20 transform hover:-translate-y-1">
+                    Coba Demo Aplikasi
+                </a>
+                <a href="#kalkulator" class="px-8 py-4 border border-gray-600 hover:border-white text-white font-medium rounded-xl transition-all hover:bg-white/5">
+                    Hitung Estimasi Return
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="keamanan" class="py-10 bg-white border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <p class="text-center text-xs font-semibold text-gray-400 uppercase tracking-widest mb-8">
+                Ekosistem Terintegrasi & Terawasi Oleh
+            </p>
+            <div class="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <div class="flex items-center gap-2 font-bold text-xl text-slate-700"><i class="fa-solid fa-building-columns text-evimeria-primary"></i> OJK</div>
+                <div class="flex items-center gap-2 font-bold text-xl text-slate-700"><i class="fa-solid fa-shield-halved text-evimeria-primary"></i> KBI</div>
+                <div class="flex items-center gap-2 font-bold text-xl text-slate-700"><i class="fa-solid fa-chart-line text-evimeria-primary"></i> ICDX</div>
+                <div class="flex items-center gap-2 font-bold text-xl text-slate-700"><i class="fa-solid fa-briefcase text-evimeria-primary"></i> PG Berjangka</div>
+                <div class="flex items-center gap-2 font-bold text-xl text-slate-700"><i class="fa-solid fa-vault text-evimeria-primary"></i> BCA</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="py-24 bg-evimeria-gray overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                
+                <div class="space-y-8">
+                    <span class="text-evimeria-primary font-bold tracking-wider text-sm uppercase">The Problem & Solution</span>
+                    <h2 class="text-4xl font-bold text-slate-900 leading-tight">
+                        Mengapa Aset Anda Harus <span class="text-gray-400 line-through decoration-evimeria-gold decoration-2">Diam</span>?
+                    </h2>
+                    
+                    <div class="space-y-4 text-slate-600 text-lg leading-relaxed">
+                        <p>
+                            Investasi emas konvensional adalah <em>safe haven</em> yang pasif. Nilainya terjaga, namun tidak menciptakan nilai tambah ekonomi ("idle asset").
+                        </p>
+                        <p>
+                            <strong>Evimeria</strong> mengubah paradigma tersebut melalui mekanisme <em>Asset-Backed Green Financing</em>. Aset Anda bekerja ganda:
+                        </p>
+                    </div>
+
+                    <div class="space-y-4 pt-4">
+                        <div class="flex gap-4 p-4 bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-md transition">
+                            <div class="w-10 h-10 rounded-full bg-evimeria-gold/10 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-coins text-evimeria-gold"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Capital Appreciation</h4>
+                                <p class="text-sm text-slate-500">Potensi kenaikan harga emas global (Hedging).</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 p-4 bg-white rounded-xl border border-green-100 shadow-sm hover:shadow-md transition">
+                            <div class="w-10 h-10 rounded-full bg-evimeria-primary/10 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-chart-simple text-evimeria-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Green Yield Generator</h4>
+                                <p class="text-sm text-slate-500">Dividen tambahan dari bagi hasil proyek hijau.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-evimeria-primary to-evimeria-gold rounded-[2rem] blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
+                    
+                    <div class="relative bg-white p-8 rounded-[2rem] shadow-2xl border border-gray-100">
+                        <div class="flex justify-between items-end mb-8">
+                            <div>
+                                <h3 class="font-bold text-2xl text-slate-800">Proyeksi Nilai Aset</h3>
+                                <p class="text-sm text-slate-400">Simulasi pertumbuhan 5 tahun</p>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-1">Total Return</div>
+                                <div class="text-2xl font-bold text-evimeria-primary">+14.2% <span class="text-xs font-normal text-gray-400">/ p.a</span></div>
+                            </div>
+                        </div>
+
+                        <div class="relative h-64 w-full mt-6">
+                            <div class="absolute inset-0 flex flex-col justify-between">
+                                <div class="border-t border-dashed border-gray-100 w-full h-full"></div>
+                                <div class="border-t border-dashed border-gray-100 w-full h-full"></div>
+                                <div class="border-t border-dashed border-gray-100 w-full h-full"></div>
+                            </div>
+
+                            <svg class="absolute inset-0 w-full h-full overflow-visible" preserveAspectRatio="none">
+                                <path d="M0,220 Q150,200 400,100" fill="none" stroke="#CBD5E1" stroke-width="3" stroke-dasharray="6,6" />
+                                
+                                <defs>
+                                    <linearGradient id="chartGradient" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#047857" stop-opacity="0.1"/>
+                                        <stop offset="100%" stop-color="#047857" stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+                                <path d="M0,220 Q150,150 400,20" fill="url(#chartGradient)" stroke="#047857" stroke-width="4" stroke-linecap="round" />
+                                
+                                <circle cx="400" cy="100" r="4" fill="#94A3B8" />
+                                <circle cx="400" cy="20" r="6" fill="#047857" stroke="#fff" stroke-width="3" />
+                                
+                                <g transform="translate(280, 20)">
+                                    <rect x="0" y="0" width="110" height="34" rx="8" fill="#022c22" />
+                                    <text x="55" y="21" font-family="sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="bold">🚀 + Green Yield</text>
+                                </g>
+                            </svg>
+                        </div>
+
+                        <div class="flex items-center justify-center gap-8 mt-8 text-sm">
+                            <div class="flex items-center gap-2">
+                                <span class="w-3 h-3 rounded-full bg-slate-300"></span>
+                                <span class="text-slate-500 font-medium">Emas Biasa</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="w-3 h-3 rounded-full bg-evimeria-primary shadow-lg shadow-green-200"></span>
+                                <span class="text-slate-800 font-bold">Evimeria</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kalkulator" class="py-24 bg-evimeria-dark text-white relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-evimeria-gold to-transparent opacity-30"></div>
+        
+        <div class="max-w-4xl mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Simulasi Dampak Investasi</h2>
+                <p class="text-gray-400">Lihat potensi konversi aset Rupiah Anda menjadi Emas Digital & Jejak Karbon yang dihapus.</p>
+            </div>
+
+            <div class="bg-white/5 backdrop-blur-lg border border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <label class="block text-xs font-bold text-evimeria-gold uppercase tracking-wider mb-3">Jumlah Investasi (IDR)</label>
+                        <div class="relative group">
+                            <span class="absolute left-0 top-1/2 -translate-y-1/2 text-gray-400 font-light text-2xl group-focus-within:text-white transition">Rp</span>
+                            <input type="number" id="investInput" placeholder="10.000.000" 
+                                class="w-full bg-transparent border-b-2 border-gray-700 py-4 pl-10 text-white text-3xl font-bold focus:outline-none focus:border-evimeria-gold transition placeholder-gray-700">
+                        </div>
+                        <p class="text-xs text-gray-500 mt-4 italic">*Estimasi harga emas: Rp 1.350.000/gram</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="bg-gradient-to-br from-yellow-500/10 to-transparent border border-yellow-500/20 p-6 rounded-2xl flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-yellow-500/20 flex items-center justify-center text-evimeria-gold text-xl">
+                                    <i class="fa-solid fa-coins"></i>
+                                </div>
+                                <div>
+                                    <span class="block text-xs text-gray-400 uppercase">Aset Emas</span>
+                                    <span class="text-xs text-yellow-500 font-mono">Secured</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <span id="goldResult" class="block text-3xl font-bold text-white tracking-tight">0.00</span>
+                                <span class="text-xs text-gray-400">Gram</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-gradient-to-br from-emerald-500/10 to-transparent border border-emerald-500/20 p-6 rounded-2xl flex items-center justify-between">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-full bg-emerald-500/20 flex items-center justify-center text-emerald-400 text-xl">
+                                    <i class="fa-solid fa-tree"></i>
+                                </div>
+                                <div>
+                                    <span class="block text-xs text-gray-400 uppercase">Dampak Karbon</span>
+                                    <span class="text-xs text-emerald-400 font-mono">Offset</span>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <span id="carbonResult" class="block text-3xl font-bold text-white tracking-tight">0.0</span>
+                                <span class="text-xs text-gray-400">Kg CO2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-black text-gray-500 py-16 border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-evimeria-primary rounded flex items-center justify-center text-white">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <span class="text-xl font-bold text-white tracking-tight">Evimeria</span>
+                </div>
+                
+                <div class="text-sm">
+                    &copy; 2026 Evimeria. All rights reserved. <br class="md:hidden"> Powered by ICDX & KBI.
+                </div>
+                
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-white transition"><i class="fa-brands fa-linkedin text-xl"></i></a>
+                    <a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram text-xl"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const investInput = document.getElementById('investInput');
+        const goldResult = document.getElementById('goldResult');
+        const carbonResult = document.getElementById('carbonResult');
+
+        investInput.addEventListener('input', (e) => {
+            const val = parseFloat(e.target.value);
+            if(val > 0) {
+                // Asumsi: 1 Gram = 1.350.000
+                const gold = (val / 1350000).toFixed(2);
+                
+                // Asumsi: Tiap 100rb investasi mengurangi 0.5 Kg CO2 (Ilustrasi)
+                const carbon = (val / 100000 * 0.5).toFixed(1);
+                
+                goldResult.innerText = gold;
+                carbonResult.innerText = carbon;
+            } else {
+                goldResult.innerText = "0.00";
+                carbonResult.innerText = "0.0";
+            }
+        });
+    </script>
+</body>
+</html>
